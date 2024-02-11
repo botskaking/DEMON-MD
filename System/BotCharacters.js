@@ -51,6 +51,7 @@
 17 --- Yor
 18 --- Shinbou
 19 --- Eiko
+20 --- Shizuka
 
 Image Source: https://wall.alphacoders.com/
 Image Source: https://wallpapercave.com/
@@ -61,7 +62,6 @@ Do not change or remove present charID. You can add more characters by adding mo
 Add character name, video link, and image links.
 Don't forget to change "charlist.js" and "setchar.js" inside "Plugins\moderator.js"  file.
 */
-
 
 
 global.charID0 = {
@@ -289,3 +289,15 @@ global.charID19 = {
   botImage5 : "https://images6.alphacoders.com/124/1247977.jpg",
   botImage6 : "https://images2.alphacoders.com/125/1251795.jpg",
 }
+
+
+global.charID20 = {
+  botName : "Shizuka MD",
+  botVideo : "https://raw.githubusercontent.com/salmanytofficial/XLICON-MD/main/lib/assets/help.mp4",
+  botImage1 : "https://iili.io/J1eiev2.jpg",
+  botImage2 : "https://iili.io/J1eiev2.jpg",
+  botImage3 : "https://iili.io/J1eiev2.jpg",
+  botImage4 : "https://iili.io/J1eiev2.jpg",
+  botImage5 : "https://iili.io/J1eiev2.jpg",
+  botImage6 : "https://iili.io/J1eiev2.jpg",
+ }
