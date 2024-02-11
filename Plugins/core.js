@@ -31,7 +31,7 @@ module.exports = {
       case "sc":
         await doReact("🧣");
         let repoInfo = await axios.get(
-          "https://api.github.com/repos/FantoX/Atlas-MD"
+          "https://api.github.com/repos/botskaking/Koyuki-"
         );
         let repo = repoInfo.data;
         console.log(repo);
@@ -43,7 +43,7 @@ module.exports = {
           2
         )} MB\n*📅 Last Updated:* ${repo.updated_at}\n\n*🔗 Repo Link:* ${
           repo.html_url
-        }\n\n❝ Dont forget to give a Star ⭐ to the repo. It's made with restless hardwork by *Team ATLAS*. ❞\n\n*©️ Team ATLAS- 2023*`;
+        }\n\n❝ Dont forget to give a Star ⭐ to the repo. It's made with restless hardwork by *Team Crystle And IronBotz*. ❞\n\n*©️ Team IronBotz And Crystle- 2024*`;
         Atlas.sendMessage(m.from, { image: pic, caption: txt }, { quoted: m });
         break;
 
@@ -57,7 +57,7 @@ module.exports = {
       case "help":
       case "h":
       case "menu":
-        await doReact("☃️");
+        await doReact("✅");
         await Atlas.sendPresenceUpdate("composing", m.from);
         function readUniqueCommands(dirPath) {
           const allCommands = [];
@@ -92,7 +92,7 @@ module.exports = {
               file.replace(".js", "").charAt(0).toUpperCase() +
               file.replace(".js", "").slice(1);
 
-            formatted += `╟   🏮 *${capitalizedFile}* 🏮   ╢\n\n`;
+            formatted += `╟   ▶ *${capitalizedFile}* ▶   ╢\n\n`;
             formatted += `\`\`\`${commands
               .map((cmd) => `⥼   ${prefix + cmd}`)
               .join("\n")}\`\`\`\n\n\n`;
@@ -105,7 +105,7 @@ module.exports = {
 
         const allCommands = readUniqueCommands(pluginsDir);
         const formattedCommands = formatCommands(allCommands);
-        var helpText = `\nKonnichiwa *${pushName}* Senpai,\n\nI am *${botName}*, a WhatsApp bot built to take your boring WhatsApp experience into next level.\n\n*🔖 My Prefix is:*  ${prefix}\n\n${formattedCommands}\n\n\n*©️ Team ATLAS- 2023*`;
+        var helpText = `\nKonnichiwa *${pushName}* Senpai,\n\nI am *${botName}*, a WhatsApp bot built to take your boring WhatsApp experience into next level.\n\n*🔖 My Prefix is:*  ${prefix}\n\n${formattedCommands}\n\n\n*©️ Team IRONBOTZ- 2023*`;
         await Atlas.sendMessage(
           m.from,
           { video: { url: botVideo }, gifPlayback: true, caption: helpText },
@@ -119,7 +119,7 @@ module.exports = {
       case "about":
         await doReact("🔰");
         let xyz = await axios.get(
-          "https://api.github.com/repos/FantoX/Atlas-MD/releases"
+          "https://api.github.com/repos/botskaking/Koyuki-/releases"
         );
         let latest = xyz.data[0].tag_name;
         const version2 = package.version;
