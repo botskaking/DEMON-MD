@@ -31,7 +31,7 @@ module.exports = {
       case "sc":
         await doReact("🧣");
         let repoInfo = await axios.get(
-          "https://api.github.com/repos/botskaking/Koyuki-"
+          "https://api.github.com/repos/botskaking/Shizuka-"
         );
         let repo = repoInfo.data;
         console.log(repo);
@@ -43,7 +43,7 @@ module.exports = {
           2
         )} MB\n*📅 Last Updated:* ${repo.updated_at}\n\n*🔗 Repo Link:* ${
           repo.html_url
-        }\n\n❝ Dont forget to give a Star ⭐ to the repo. It's made with restless hardwork by *Team Crystle And IronBotz*. ❞\n\n*©️ Team IronBotz And Crystle- 2024*`;
+        }\n\n❝ Dont forget to give a Star ⭐ to the repo. It's made with modification by *Team IronBotz*. ❞\n\n*©️ Team IronBotz - 2024*`;
         Atlas.sendMessage(m.from, { image: pic, caption: txt }, { quoted: m });
         break;
 
@@ -92,7 +92,7 @@ module.exports = {
               file.replace(".js", "").charAt(0).toUpperCase() +
               file.replace(".js", "").slice(1);
 
-            formatted += `╟   ▶ *${capitalizedFile}* ▶   ╢\n\n`;
+            formatted += `╟   ▶ *${capitalizedFile}* ◀   ╢\n\n`;
             formatted += `\`\`\`${commands
               .map((cmd) => `⥼   ${prefix + cmd}`)
               .join("\n")}\`\`\`\n\n\n`;
