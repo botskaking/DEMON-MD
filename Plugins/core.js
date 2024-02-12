@@ -119,7 +119,7 @@ module.exports = {
       case "about":
         await doReact("🔰");
         let xyz = await axios.get(
-          "https://api.github.com/repos/botskaking/Koyuki-/releases"
+          "https://api.github.com/repos/botskaking/Sizuka-/releases"
         );
         let latest = xyz.data[0].tag_name;
         const version2 = package.version;
